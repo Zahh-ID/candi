@@ -1,0 +1,67 @@
+================================================================================
+PROJECT PROPOSAL: CANDI NUSANTARA
+Digital Preservation & Interactive Exploration of Indonesia's Ancient Heritage
+================================================================================
+
+1. EXECUTIVE SUMMARY
+---------------------
+Candi Nusantara is a premium, high-impact web platform designed to preserve and 
+showcase the architectural and historical grandeur of Indonesia's ancient temples 
+(Candi). The project bridges the gap between historical scholarship and modern 
+digital storytelling, offering an immersive educational experience that 
+celebrates the "Warisan Peradaban Nusantara" (Nusantara's Civilizational Heritage).
+
+2. CORE VISION & PURPOSE
+-------------------------
+- DIGITAL PRESERVATION: Creating a robust digital archive of 11+ major temples 
+  using high-resolution local assets and 3D models.
+- INTERACTIVE EDUCATION: Moving beyond static text to dynamic, scroll-triggered 
+  narratives that engage the digital-native generation.
+- CULTURAL ACCESSIBILITY: Providing a centralized hub for cross-regional 
+  temple distribution, historical filtering, and dynastic context.
+
+3. DESIGN SYSTEM: "BATU KUNO" (ANCIENT STONE)
+---------------------------------------------
+The platform employs a bespoke, premium aesthetic tailored to the subject matter:
+- PALETTE: Slate Dark (#0A0806), Heirloom Gold (#C8A951), and Aged Parchment (#F5ECD7).
+- TYPOGRAPHY: 'Cinzel' for headers (evoking stone inscriptions) and 'Outfit' 
+  for body text (modern readability).
+- AESTHETIC: Glassmorphism, smooth gradients, and cinematic text-reveal effects.
+
+4. KEY PLATFORM FEATURES
+-------------------------
+- CINEMATIC HERO STORYTELLING: A multi-phase, scroll-driven interactive sequence 
+  introducing the spirit of the archipelago.
+- INTERACTIVE 3D ARTIFACTS: High-fidelity Sketchfab 3D viewer integration 
+  allowing users to manipulate and inspect temple structures.
+- GEOGRAPHIC DISTRIBUTION: Custom Leaflet-based interactive map showing 
+  temple locations from Sumatra to Bali.
+- DYNAMIC DATA FILTERING: Seamless categorization by Era (7th-15th century), 
+  Religion (Hindu/Buddhist), Island, and Dynasty (Sailendra, Sanjaya, Majapahit, etc.).
+- SCROLL-BASED TEXT REVEAL: Sophisticated animations that unveil historical 
+  narratives as the user explores.
+
+5. TECHNICAL ARCHITECTURE
+--------------------------
+- FRAMEWORK: Next.js 15+ (App Router) for high-performance SSR and SEO.
+- ANIMATION ENGINE: Framer Motion for kinetic UI and Lenis for smooth scrolling.
+- ASSET MANAGEMENT: Fully self-contained implementation with local 
+  high-resolution photography to ensure production reliability.
+- SEO & PWA: Optimized metadata, Sitemap.xml, Robots.txt, and PWA manifest for 
+  cross-platform discoverability.
+
+6. TARGET AUDIENCE & IMPACT
+----------------------------
+- EDUCATION: Students and researchers exploring Indonesian history in 3D.
+- TOURISM: International and local travelers planning heritage visits.
+- CULTURE: Heritage enthusiasts seeking a premium, curated digital museum.
+
+7. CONCLUSION
+--------------
+Candi Nusantara is more than a website; it is an interactive tribute to human 
+ingenuity. By combining state-of-the-art web technology with deep historical 
+narratives, it sets a new standard for cultural preservation in the digital age.
+
+================================================================================
+CANDI NUSANTARA - Warisan Peradaban Nusantara
+================================================================================
