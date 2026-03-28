@@ -1,5 +1,5 @@
-export const isProd = process.env.NODE_ENV === "production";
-export const basePath = isProd ? "/candi" : "";
+export const isProd = true;
+export const basePath = "/candi";
 
 /**
  * Prepends the basePath to a static asset path in production.
@@ -7,7 +7,7 @@ export const basePath = isProd ? "/candi" : "";
  */
 export function getAssetPath(path: string): string {
   if (!path) return "";
-  if (path.startsWith("http") || path.startsWith("https") || !isProd) {
+  if (path.startsWith("http") || path.startsWith("https")) {
     return path;
   }
   
