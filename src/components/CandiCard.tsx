@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { Candi } from "@/data/candi";
 import { MapPin, Building2, Landmark, Cuboid } from "lucide-react";
+import { getAssetPath } from "@/utils/paths";
 
 export default function CandiCard({ candi, index }: { candi: Candi; index: number }) {
   const isUNESCO = candi.statusWarisan === "UNESCO";
@@ -20,7 +21,7 @@ export default function CandiCard({ candi, index }: { candi: Candi; index: numbe
           {/* Image */}
           <div className="relative aspect-[4/3] overflow-hidden bg-background-200">
             <img 
-              src={candi.thumbnail} 
+              src={getAssetPath(candi.thumbnail)} 
               alt={candi.nama}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"

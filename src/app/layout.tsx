@@ -5,6 +5,7 @@ import SmoothScrolling from "@/components/SmoothScrolling";
 import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { getAssetPath } from "@/utils/paths";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
@@ -18,18 +19,18 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: "https://candi-nusantara.vercel.app" as any,
+  metadataBase: new URL("https://zahh-id.github.io/candi"),
   title: "Candi Nusantara | Eksplorasi Peninggalan Bersejarah",
   description:
     "Platform eksplorasi candi dan peninggalan bersejarah Indonesia yang menampilkan model 3D, informasi sejarah, dan peta interaktif.",
-  manifest: "/manifest.json",
+  manifest: getAssetPath("/manifest.json"),
   icons: {
     icon: [
-      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: getAssetPath("/favicon-96x96.png"), sizes: "96x96", type: "image/png" },
+      { url: getAssetPath("/favicon.svg"), type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    shortcut: getAssetPath("/favicon.ico"),
+    apple: getAssetPath("/apple-touch-icon.png"),
   },
   openGraph: {
     title: "Candi Nusantara | Eksplorasi Peninggalan Bersejarah",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Candi Nusantara",
     images: [
       {
-        url: "/og-image.png",
+        url: getAssetPath("/og-image.png"),
         width: 1200,
         height: 630,
         alt: "Candi Nusantara Preview",
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Candi Nusantara | Eksplorasi Peninggalan Bersejarah",
     description: "Nikmati perjalanan visual 3D melintasi sejarah candi-candi agung di Indonesia.",
-    images: ["/og-image.png"],
+    images: [getAssetPath("/og-image.png")],
   },
 };
 

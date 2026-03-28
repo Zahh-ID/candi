@@ -5,6 +5,7 @@ import "leaflet/dist/leaflet.css";
 import { dataCandi } from "@/data/candi";
 import { MapIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { getAssetPath } from "@/utils/paths";
 
 // Since leaflet needs window, we should make sure it is dynamically imported or only used on client
 import L from "leaflet";
@@ -61,7 +62,7 @@ export default function PetaCandiMap() {
           >
             <Popup className="custom-popup">
               <div className="font-outfit text-background-200">
-                <img src={candi.thumbnail} alt={candi.nama} className="w-full h-24 object-cover rounded-md mb-2" />
+                <img src={getAssetPath(candi.thumbnail)} alt={candi.nama} className="w-full h-24 object-cover rounded-md mb-2" />
                 <h3 className="font-cinzel font-bold text-base mb-1">{candi.nama}</h3>
                 <p className="text-xs text-gray-700 mb-1">{candi.lokasi}</p>
                 <div className="flex gap-2 text-xs text-gray-600 mb-3">
