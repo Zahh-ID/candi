@@ -1,12 +1,15 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   /* config options here */
   output: "export",
   images: {
     unoptimized: true,
   },
-  // basePath: "/candi-nusantara", // Uncomment if deploying to username.github.io/repo-name
+  basePath: isProd ? "/candi" : "",
+  assetPrefix: isProd ? "/candi/" : "",
   allowedDevOrigins: [
     "typically-star-missouri-exceptions.trycloudflare.com",
     "localhost:3000",
